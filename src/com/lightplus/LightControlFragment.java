@@ -12,6 +12,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout.LayoutParams;
 
+import com.nineoldandroids.view.ViewPropertyAnimator;
+
 public class LightControlFragment extends Fragment {
 	private final static String EXTRA_MODE = "mode";
 	private final static String EXTRA_ON = "on";
@@ -113,6 +115,20 @@ public class LightControlFragment extends Fragment {
 		} else {
 			mDrawable.reverseTransition(200);
 		}
+	}
+
+
+
+	public void animHideButton(int height) {
+		ViewPropertyAnimator animator = ViewPropertyAnimator.animate(mBulb);
+		animator.translationY(height).setDuration(400);
+
+	}
+
+	public void animShowButton() {
+		ViewPropertyAnimator animator = ViewPropertyAnimator.animate(mBulb);
+		animator.translationY(0).setDuration(400);
+
 	}
 
 }

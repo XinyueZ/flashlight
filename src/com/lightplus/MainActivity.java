@@ -25,11 +25,13 @@ import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -183,7 +185,10 @@ public class MainActivity extends ActionBarActivity implements PreviewSurface.Ca
 		if (!on) {
 			on = true;
 			mSurface.lightOn();
-			mCurrentFragment.toggleLightControl(on);
+			if(mCurrentFragment != null) {
+				mCurrentFragment.toggleLightControl(on);
+				mCurrentFragment.animHideButton(mActionBarHeight * 4);
+			}
 			animToolActionBar(-mActionBarHeight * 4);
 			supportInvalidateOptionsMenu();
 		}
@@ -193,7 +198,9 @@ public class MainActivity extends ActionBarActivity implements PreviewSurface.Ca
 		if (on) {
 			on = false;
 			mSurface.lightOff();
-			mCurrentFragment.toggleLightControl(on);
+			if(mCurrentFragment != null) {
+				mCurrentFragment.toggleLightControl(on);
+			}
 			animToolActionBar(0);
 			supportInvalidateOptionsMenu();
 		}
@@ -351,4 +358,25 @@ public class MainActivity extends ActionBarActivity implements PreviewSurface.Ca
 		animator.translationY(value).setDuration(400);
 	}
 
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		if(mCurrentFragment != null) {
+			mCurrentFragment.animShowButton();
+			h.postDelayed(r, 3000);
+		}
+		return super.onTouchEvent(event);
+	}
+
+	Handler h = new Handler();
+	Runnable r = new Runnable() {
+		@Override
+		public void run() {
+			if(on) {
+				if(mCurrentFragment != null) {
+					mCurrentFragment.animHideButton(mActionBarHeight * 4);
+
+				}
+			}
+		}
+	};
 }
