@@ -14,6 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <transition  xmlns:android="http://schemas.android.com/apk/res/android">
-	<item android:drawable="@drawable/light_small_off" />
-	<item android:drawable="@drawable/light_small_on" />
+	<item android:drawable="@drawable/ic_light_small_off" />
+	<item android:drawable="@drawable/ic_light_small_on" />
 </transition>

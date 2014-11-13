@@ -3,4 +3,13 @@
     <color name="grey">#ff373737</color>
     <color name="white">#ffE7E7E7</color>
     <color name="black">#ff000000</color>
+
+    <color name="common_indigo">#1A237E</color>
+    <color name="common_blue">#3F51B5</color>
+    <color name="common_green">#1B5E20</color>
+    <color name="common_red">#B71C1C</color>
+    <color name="common_white">#FFFFFF</color>
+    <color name="common_black">#000000</color>
+    <color name="common_grey">#B0BEC5</color>
+    <color name="common_mid_grey">#607D8B</color>
 </resources>

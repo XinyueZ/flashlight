@@ -15,10 +15,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
-    <string name="app_name">Search Light</string>
+    <string name="app_name">Flashlight</string>
     <string name="dialog_camera_na">该相机是由另一个应用程序使用</string>
     <string name="dialog_ok">确定</string>
-    <string name="viewfinder">取景器</string>
+    <string name="viewfinder">取景</string>
     <string name="normal">标准</string>
     <string name="touch_here">触摸此处</string>
+    <string name="modes_black">暗屏</string>
 </resources>

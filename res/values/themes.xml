@@ -1,7 +1,48 @@
 <resources>
-    <style name="CompatibilityTheme" parent="@android:style/Theme.Black.NoTitleBar">
-        <!-- Inherits the default theme for pre-HC (no action bar) -->
-        <item name="switchStyle">@style/LightSwitch</item>
-        <item name="android:windowBackground">@color/black</item>
+
+
+
+    <style name="CompatibilityTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:colorPrimary">@color/common_indigo</item>
+        <item name="android:colorPrimaryDark">@color/common_blue</item>
+        <item name="android:windowBackground">@color/common_black</item>
+        <!-- android:textColorPrimary is the  color of the title text in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">@color/common_white</item>
+        <!-- android:textColorPrimaryInverse is the  color of the title    text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <item name="android:textColorPrimaryInverse">@color/common_white</item>
+        <item name="android:dropDownListViewStyle">@style/OverflowDropDown</item>
+        <item name="android:colorAccent">@color/common_white</item>
+        <item name="android:actionModeBackground">@color/common_mid_grey</item>
+        <!-- android:textColorSecondary is the color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/common_white</item>
+        <item name="android:actionMenuTextColor">@color/common_white</item>
+
+        <!--##########Support library compatibility##########-->
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/common_indigo</item>
+        <item name="colorPrimaryDark">@color/common_blue</item>
+        <item name="dropDownListViewStyle">@style/OverflowDropDown</item>
+        <item name="colorAccent">@color/common_white</item>
+        <item name="actionModeBackground">@color/common_mid_grey</item>
+        <!--
+            android:actionMenuTextColor is the color of the text of
+            action (menu) items in the Toolbar,
+            at least in the  Theme.AppCompat theme.
+            For some reason, they already get the textColorPrimary
+            when running on API 21, but not on older versions of
+            Android, so this is only necessary to support older
+            Android versions.
+        -->
+        <item name="actionMenuTextColor">@color/common_white</item>
+    </style>
+
+
+    <!--Actionbar overflow menu divider-->
+    <style name="OverflowDropDown" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:background">@color/common_black</item>
     </style>
 </resources>

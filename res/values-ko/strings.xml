@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
-    <string name="app_name">Search Light</string>
+    <string name="app_name">Flashlight</string>
     <string name="dialog_camera_na">카메라는 사용중인 다른 응용 프로그램입니다</string>
     <string name="dialog_ok">확인</string>
     <string name="viewfinder">뷰파인더</string>

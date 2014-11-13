@@ -15,8 +15,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:keepScreenOn="true" >
     <com.lightplus.PreviewSurface
     	android:id="@+id/surface"
@@ -24,7 +24,18 @@ limitations under the License.
     	android:layout_height="1dp" />
     <!--  The following is a view to simply cover the preview surface  -->
     <View
+        android:id="@+id/surface_cover"
     	android:layout_width="1dp"
     	android:layout_height="1dp"
     	android:background="#000" />
+    
+    <FrameLayout
+        android:id="@+id/controller_fragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ActionBar_ToolBar" />
 </RelativeLayout>

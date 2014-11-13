@@ -15,11 +15,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
-    <string name="app_name">Search Light</string>
+    <string name="app_name">Flashlight</string>
     <string name="dialog_camera_na">The camera is in use by another application</string>
     <string name="dialog_ok">OK</string>
     <string name="black">Black Screen</string>
-    <string name="viewfinder">Viewfinder</string>
+    <string name="viewfinder">Path-finder</string>
     <string name="normal">Standard</string>
     <string name="touch_here">touch here</string>
     
@@ -31,9 +31,11 @@ limitations under the License.
     
     <!--  MUST match the exact order as "modes_ids" integer array -->
     <string-array name="modes">
-        <item>Light bulb</item>
-        <item>Light switch</item>
         <item>Viewfinder</item>
         <item>Blackout</item>
     </string-array>
+
+
+    <string name="modes_path_finder">@string/viewfinder</string>
+    <string name="modes_black">Blackout</string>
 </resources>

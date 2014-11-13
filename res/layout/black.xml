@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 Copyright 2010 Google Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,16 +13,19 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<Button xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/button_black"
-	android:layout_gravity="center"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:background="@drawable/rectangle"
-    android:text="@string/touch_here"
-    android:textColor="#FFF"
-    android:textSize="20sp"
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button_black"
+    android:layout_gravity="bottom|right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#0000"
+    android:src="@drawable/lightbulb_small"
     android:focusableInTouchMode="true"
-    android:onClick="toggleLight">
-    <requestFocus/> <!-- get focus so the trackball works -->
-</Button>
+    android:onClick="toggleLight"
+    android:layout_marginRight="@dimen/ctrl_margin_right"
+    android:contentDescription="@string/description_button_lightbulb"
+    android:layout_marginBottom="?attr/actionBarSize">
+
+    <requestFocus />
+    <!-- get focus so the trackball works -->
+</ImageButton>

@@ -1,5 +1,3 @@
 <resources>
-    	<dimen name="switch_textSize">12sp</dimen>
-        <dimen name="switch_thumbTextPadding">14dp</dimen>
-        <dimen name="switch_minWidth">100dp</dimen>
+
 </resources>
