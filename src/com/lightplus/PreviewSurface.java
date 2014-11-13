@@ -30,7 +30,7 @@ import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-class PreviewSurface extends SurfaceView implements SurfaceHolder.Callback {
+public class PreviewSurface extends SurfaceView implements SurfaceHolder.Callback {
 	private final static String TAG = "PreviewSurface";
 	SurfaceHolder mHolder;
 	Context mContext;

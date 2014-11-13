@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
-    <string name="app_name">Flashlight</string>
+    <string name="app_name">Taschenlampe</string>
     <string name="dialog_camera_na">Die Kamera ist in einer anderen Anwendung verwendet</string>
     <string name="dialog_ok">OK</string>
     <string name="viewfinder">Sucher</string>

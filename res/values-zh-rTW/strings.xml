@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
-    <string name="app_name">Flashlight</string>
+    <string name="app_name">手电筒</string>
     <string name="dialog_camera_na">該相機在使用中被另一應用程序</string>
     <string name="dialog_ok">確定</string>
     <string name="viewfinder">取景</string>

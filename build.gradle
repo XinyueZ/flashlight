@@ -63,12 +63,7 @@ android {
 
     lintOptions {
         htmlReport false
-
-        // If force to deploy the application to the target API, then disable it.
-        // disable 'OldTargetApi'
-
-        // If we only use one density, then disable it.
-        // disable 'IconMissingDensityFolder'
+        abortOnError false
     }
 }
 
