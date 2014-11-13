@@ -1,9 +1,13 @@
 flashlight
 ========== 
 
-Forked from [seach-light](https://code.google.com/p/search-light/).
-Add more modern UI features of Android.
-Keep simple, light, green without any ads etc.
+* Forked from [seach-light](https://code.google.com/p/search-light/).
+* Add more modern UI features of Android.
+* Add new icons.
+* Removed some features that overhead application itself.
+* Keep simple, light, green without any ads etc.
+
+[![https://play.google.com/store/apps/details?id=com.lightplus](https://dl.dropbox.com/s/phrg0387osr3riz/images.jpeg)](https://play.google.com/store/apps/details?id=com.lightplus)
 
 License
 ======
