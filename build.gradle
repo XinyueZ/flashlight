@@ -44,10 +44,10 @@ android {
 
     defaultConfig {
         applicationId "com.lightplus"
-        minSdkVersion 14
+        minSdkVersion 7
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
     }
 
     buildTypes {
