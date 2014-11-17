@@ -6,7 +6,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:colorPrimary">@color/common_indigo</item>
-        <item name="android:colorPrimaryDark">@color/common_blue</item>
+        <item name="android:colorPrimaryDark">@color/common_black</item>
         <item name="android:windowBackground">@color/common_black</item>
         <!-- android:textColorPrimary is the  color of the title text in the Toolbar, in the Theme.AppCompat theme:  -->
         <item name="android:textColorPrimary">@color/common_white</item>
@@ -23,7 +23,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="colorPrimary">@color/common_indigo</item>
-        <item name="colorPrimaryDark">@color/common_blue</item>
+        <item name="colorPrimaryDark">@color/common_black</item>
         <item name="dropDownListViewStyle">@style/OverflowDropDown</item>
         <item name="colorAccent">@color/common_white</item>
         <item name="actionModeBackground">@color/common_mid_grey</item>
